@@ -1,20 +1,26 @@
+<!--
+CS326 Final Project
+Author: Owen Pruim and David Reidsma
+HTML for our Angular web app to control a Lego RCX from a Raspberry Pi.
+-->
+
 <html>
   <head>
     <title>{{title}}</title>
   </head>
   <body>
     <div id="remote-container">
-      <button (click)="remoteButtonPressed('fwdLeft')" class="remote-button fwd-left">Forwards Left</button>
+      <div class="remote-button fwd-left"></div>
       <button (click)="remoteButtonPressed('fwd')" class="remote-button forwards">Forwards</button>
-      <button (click)="remoteButtonPressed('fwdRight')" class="remote-button fwd-right">Forwards Right</button>
+      <div class="remote-button fwd-right"></div>
 
       <button (click)="remoteButtonPressed('left')" class="remote-button turn-left">Turn Left</button>
       <button (click)="remoteButtonPressed('stop')" class="remote-button stop">Stop</button>
       <button (click)="remoteButtonPressed('right')" class="remote-button turn-right">Turn Right</button>
 
-      <button (click)="remoteButtonPressed('bwdLeft')" class="remote-button bkwd-left">Backwards Left</button>
+      <div class="remote-button bkwd-left"></div>
       <button (click)="remoteButtonPressed('bwd')" class="remote-button backwards">Backwards</button>
-      <button (click)="remoteButtonPressed('bwdRight')" class="remote-button bkwd-right">Backwards Right</button>
+      <div class="remote-button bkwd-right"></div>
     </div>
   </body>
 </html>

@@ -1,3 +1,9 @@
+/*
+CS326 Final Project
+Author: Owen Pruim and David Reidsma
+Main file for our Angular web app to control a Lego RCX from a Raspberry Pi.
+*/
+
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { IMqttMessage, MqttModule, IMqttServiceOptions, MqttService } from 'ngx-mqtt';
 import { Subscription } from 'rxjs';
